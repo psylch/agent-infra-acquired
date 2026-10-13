@@ -1,0 +1,323 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>那些被收购的 Agent Infra</title><link rel="stylesheet" href="style.css"></head><body><h1>那些被收购的 Agent Infra</h1>
+<blockquote>
+<p>暗中观察 · 2026-10-13</p>
+</blockquote>
+<h2>一、Agent Infra 分几类</h2>
+<table>
+<thead>
+<tr>
+<th>层</th>
+<th>解决什么</th>
+<th>代表</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>入口 / Agent 产品</td>
+<td>用户直接用的通用 agent</td>
+<td>Manus、Muse、Grok Bot</td>
+</tr>
+<tr>
+<td>联网与搜索</td>
+<td>让 agent 读懂网页</td>
+<td>Tavily、Exa、Parallel</td>
+</tr>
+<tr>
+<td>浏览器</td>
+<td>让 agent 操作网页</td>
+<td>Browserbase、Browser Use、ego lite</td>
+</tr>
+<tr>
+<td>沙箱 / 执行环境</td>
+<td>给 agent 一台电脑跑代码</td>
+<td>E2B、Daytona、Modal、Blaxel、Butter</td>
+</tr>
+<tr>
+<td>连接器 / 工具调用</td>
+<td>接进 SaaS 和企业系统</td>
+<td>Pipedream、Composio、Natoma</td>
+</tr>
+<tr>
+<td>网关 / 安全</td>
+<td>管流量、权限和攻击</td>
+<td>Portkey、Lakera</td>
+</tr>
+<tr>
+<td>观测 / 评测</td>
+<td>看清 agent 在干什么</td>
+<td>Langfuse、Galileo、Humanloop、Neptune</td>
+</tr>
+<tr>
+<td>记忆 / 状态</td>
+<td>记住用户和上下文</td>
+<td>Mem0、Letta、Turso</td>
+</tr>
+<tr>
+<td>编排 / 搭建</td>
+<td>把 agent 搭起来</td>
+<td>LangChain、StackAI</td>
+</tr>
+<tr>
+<td>运行时 / 推理</td>
+<td>底层跑模型和代码</td>
+<td>Bun、Baseten</td>
+</tr>
+</tbody>
+</table>
+<h2>二、被收购的</h2>
+<table>
+<thead>
+<tr>
+<th>公司</th>
+<th>创始人（背景）</th>
+<th>做什么</th>
+<th>买家</th>
+<th>时间 / 价格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Manus</td>
+<td>肖弘（Monica 创始人）、季逸超、张涛</td>
+<td>通用 agent 产品</td>
+<td>Meta</td>
+<td>2025-12；超 $20 亿（WSJ）</td>
+</tr>
+<tr>
+<td>Tavily</td>
+<td>Rotem Weiss（以色列连续创业者）</td>
+<td>给 agent 用的搜索 API</td>
+<td>Nebius</td>
+<td>2026-02；首付约 $2.75 亿，最高 $4 亿（Calcalist）</td>
+</tr>
+<tr>
+<td>Langfuse</td>
+<td>Marc Klingen、Max Deichmann、Clemens Rawert（YC W23，柏林）</td>
+<td>开源 LLM 观测</td>
+<td>ClickHouse</td>
+<td>2026-01；未披露</td>
+</tr>
+<tr>
+<td>Pipedream</td>
+<td>Tod Sacerdoti（BrightRoll 创始人）、Dylan Sather</td>
+<td>3000+ 连接器的集成平台</td>
+<td>Workday</td>
+<td>2025-11 签约，12 月交割；未披露</td>
+</tr>
+<tr>
+<td>Portkey</td>
+<td>Rohit Agarwal、Ayush Garg（印度/湾区）</td>
+<td>AI 网关</td>
+<td>Palo Alto Networks</td>
+<td>2026-05；$1.4 亿（10-Q）</td>
+</tr>
+<tr>
+<td>Natoma</td>
+<td>Pratyus Patnaik 等</td>
+<td>企业 MCP 接入与权限</td>
+<td>Snowflake</td>
+<td>2026-05；未披露</td>
+</tr>
+<tr>
+<td>StackAI</td>
+<td>Tony Rosinol、Bernard Aceituno（MIT 博士）</td>
+<td>无代码 agent 搭建</td>
+<td>Asana</td>
+<td>2026-05；$7500 万（TechCrunch）</td>
+</tr>
+<tr>
+<td>Galileo</td>
+<td>Vikram Chatterji（前 Google AI）、Atindriyo Sanyal（前 Uber）、Yash Sheth（前 Google）</td>
+<td>agent 评测与观测</td>
+<td>Cisco</td>
+<td>2026-05；未披露</td>
+</tr>
+<tr>
+<td>Lakera</td>
+<td>David Haber、Mateo Rojas-Carulla、Matthias Kraft（苏黎世）</td>
+<td>提示注入防护</td>
+<td>Check Point</td>
+<td>2025-09；报道约 $3 亿</td>
+</tr>
+<tr>
+<td>Humanloop</td>
+<td>Raza Habib、Peter Hayes、Jordan Burgess（UCL 博士）</td>
+<td>提示管理与评测</td>
+<td>Anthropic（人才收购）</td>
+<td>2025-08；未披露</td>
+</tr>
+<tr>
+<td>Bun</td>
+<td>Jarred Sumner（前 Stripe）</td>
+<td>JS 运行时</td>
+<td>Anthropic</td>
+<td>2025-12；未披露</td>
+</tr>
+<tr>
+<td>Neptune.ai</td>
+<td>Piotr Niedźwiedź（波兰）</td>
+<td>训练实验追踪</td>
+<td>OpenAI</td>
+<td>2025-12；未披露</td>
+</tr>
+<tr>
+<td>Butter</td>
+<td>Erik Dunteman（Banana 联创）</td>
+<td>agent harness、轻量沙箱</td>
+<td>Modal</td>
+<td>2026-04；未披露</td>
+</tr>
+<tr>
+<td>Blaxel</td>
+<td>Charles Drappier、Paul Sinaï（法国团队）</td>
+<td>有状态沙箱与 agent 云</td>
+<td>Baseten</td>
+<td>2026-09；未披露</td>
+</tr>
+<tr>
+<td>Turso</td>
+<td>Glauber Costa、Pekka Enberg（前 ScyllaDB）</td>
+<td>每个 agent 一个数据库</td>
+<td>Supabase</td>
+<td>2026-10；未披露</td>
+</tr>
+</tbody>
+</table>
+<h2>三、还独立的</h2>
+<table>
+<thead>
+<tr>
+<th>公司</th>
+<th>创始人（背景）</th>
+<th>做什么</th>
+<th>最近状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exa</td>
+<td>Will Bryk、Jeff Wang（哈佛）</td>
+<td>agent 搜索</td>
+<td>2026-05 C 轮 $2.5 亿，估值 $22 亿</td>
+</tr>
+<tr>
+<td>Parallel</td>
+<td>Parag Agrawal（前 Twitter CEO）</td>
+<td>agent 联网检索</td>
+<td>2026-04 B 轮 $1 亿，估值 $20 亿</td>
+</tr>
+<tr>
+<td>Browserbase</td>
+<td>Paul Klein IV（前 Twilio）</td>
+<td>云端无头浏览器</td>
+<td>2025-06 B 轮 $4000 万，估值 $3 亿</td>
+</tr>
+<tr>
+<td>Browser Use</td>
+<td>Magnus Müller、Gregor Žunić（ETH）</td>
+<td>开源浏览器 agent 框架</td>
+<td>2025 种子轮 $1700 万</td>
+</tr>
+<tr>
+<td>E2B</td>
+<td>Vasek Mlejnsky、Tomas Valenta（捷克）</td>
+<td>开源代码沙箱</td>
+<td>2025 A 轮 $2100 万；累计超 10 亿次沙箱</td>
+</tr>
+<tr>
+<td>Daytona</td>
+<td>Ivan Burazin（Codeanywhere 创始人）</td>
+<td>agent 沙箱</td>
+<td>2026-02 A 轮 $2400 万</td>
+</tr>
+<tr>
+<td>Modal</td>
+<td>Erik Bernhardsson（前 Spotify）、Akshat Bubna</td>
+<td>Serverless GPU + 沙箱</td>
+<td>2026 C 轮 $3.55 亿；已开始收购（Butter）</td>
+</tr>
+<tr>
+<td>Composio</td>
+<td>Soham Ganatra、Karan Vaidya</td>
+<td>agent 工具连接器</td>
+<td>独立</td>
+</tr>
+<tr>
+<td>Mem0</td>
+<td>Taranjeet Singh、Deshraj Yadav</td>
+<td>agent 记忆层</td>
+<td>2025 融资 $2400 万</td>
+</tr>
+<tr>
+<td>Letta</td>
+<td>Charles Packer、Sarah Wooders（伯克利 MemGPT）</td>
+<td>有状态 agent</td>
+<td>独立</td>
+</tr>
+<tr>
+<td>LangChain</td>
+<td>Harrison Chase</td>
+<td>编排框架 + LangSmith</td>
+<td>2025-10 估值 $12.5 亿</td>
+</tr>
+<tr>
+<td>Baseten</td>
+<td>Tuhin Srivastava、Amir Haghighat</td>
+<td>推理平台</td>
+<td>累计融资超 $20 亿；已开始收购（Blaxel）</td>
+</tr>
+<tr>
+<td>ego lite</td>
+<td>敖特（Citro Labs）</td>
+<td>agent 原生本地浏览器</td>
+<td>早期</td>
+</tr>
+</tbody>
+</table>
+<h2>四、谁在买，买什么</h2>
+<ul>
+<li>买家几乎都是老平台：数据库（ClickHouse、Snowflake、Supabase）、安全（Palo Alto、Check Point、Cisco）、企业 SaaS（Workday、Asana）。它们买的是「agent 进来以后，我这层不被绕开」。</li>
+<li>模型公司买的是自己用的工具：Anthropic 买 Bun 和 Humanloop，OpenAI 买 Neptune，是补自家研发和 Claude Code 这类产品的底座。</li>
+<li>基础设施公司开始互相吞：Modal 买 Butter，Baseten 买 Blaxel，推理和沙箱在合到一朵「agent 云」里。</li>
+<li>价格普遍不高：公开的多在 $1–4 亿，单点工具很难自己长成平台，卖给有分发的人是常见结局。</li>
+<li>例外是两头：入口端的 Manus 卖到 $20 亿以上，联网端的 Exa、Parallel 独立估值 $20 亿级。</li>
+</ul>
+<h2>五、价值在两端</h2>
+<ul>
+<li>入口端：谁握着用户和任务，谁就有议价权。Manus 被买走的是付费用户和产品，不是技术栈。</li>
+<li>供给端：谁握着 agent 要用的网页、数据和执行环境，谁就能收过路费。搜索和沙箱是目前最贵的两层。</li>
+<li>中间层（网关、观测、连接器、编排）最容易被平台顺手做掉，所以最先被收购。</li>
+</ul>
+<h2>六、个人 agent 常驻手机之后</h2>
+<ul>
+<li>Grok Bot、Muse、Instinct 这类 always-on agent 自带电脑、浏览器和记忆，开发者拼装的那套中间件，被入口方直接内化。</li>
+<li>剩下的硬需求是「能不能进门」：网站拦代购 agent、登录态、支付和身份。瓶颈从模型转到准入。</li>
+<li>新机会在供给方这侧：Lorikeet 用 Personal Agent Protocol 让 Instinct 完成银行身份认证，说明商家开始为 agent 开专门的门。</li>
+<li>Muse 把最强模型放进 $20/$100 月订阅，入口方在找收费方式；入口越贵，越需要便宜可靠的执行层。</li>
+<li>国内是同一条线：腾讯 LightVela 从微信接入，字节在推「Spell」。入口被大厂拿着，独立 infra 的机会在给它们供货。</li>
+<li>判断：未来值钱的 agent infra，要么是入口方买不到、做不出的数据和准入，要么是大到能被入口方当供应商的执行云。</li>
+</ul>
+<h2>来源</h2>
+<ul>
+<li>Meta 收购 Manus：<a href="https://www.wsj.com/tech/ai/meta-buys-ai-startup-manus-adding-millions-of-paying-users-f1dc7ef8">https://www.wsj.com/tech/ai/meta-buys-ai-startup-manus-adding-millions-of-paying-users-f1dc7ef8</a></li>
+<li>Nebius 收购 Tavily：<a href="https://siliconangle.com/2026/02/10/ai-infrastructure-giant-nebius-buys-agentic-search-startup-tavily/">https://siliconangle.com/2026/02/10/ai-infrastructure-giant-nebius-buys-agentic-search-startup-tavily/</a></li>
+<li>ClickHouse 收购 Langfuse：<a href="https://clickhouse.com/blog/clickhouse-acquires-langfuse-open-source-llm-observability">https://clickhouse.com/blog/clickhouse-acquires-langfuse-open-source-llm-observability</a></li>
+<li>Workday 收购 Pipedream：<a href="https://investor.workday.com/news-and-events/press-releases/news-details/2025/Workday-Signs-Definitive-Agreement-to-Acquire-Pipedream-11-19-2025/default.aspx">https://investor.workday.com/news-and-events/press-releases/news-details/2025/Workday-Signs-Definitive-Agreement-to-Acquire-Pipedream-11-19-2025/default.aspx</a></li>
+<li>Palo Alto 收购 Portkey：<a href="https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-completes-acquisition-of-portkey-to-secure-ai-agents">https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-completes-acquisition-of-portkey-to-secure-ai-agents</a></li>
+<li>Snowflake 收购 Natoma：<a href="https://natoma.ai/blog/natoma-snowflake">https://natoma.ai/blog/natoma-snowflake</a></li>
+<li>Asana 收购 StackAI：<a href="https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/">https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/</a></li>
+<li>Cisco 收购 Galileo：<a href="https://linkedin.com/company/galileo-ai">https://linkedin.com/company/galileo-ai</a></li>
+<li>Check Point 收购 Lakera：<a href="https://www.checkpoint.com/press-releases/">https://www.checkpoint.com/press-releases/</a></li>
+<li>Anthropic 收购 Bun：<a href="https://bun.com/blog/bun-joins-anthropic">https://bun.com/blog/bun-joins-anthropic</a></li>
+<li>OpenAI 收购 Neptune：<a href="https://aiincontext.com/articles/openai-to-acquire-experiment-tracking-startup-neptune-ai-d78ffbb2">https://aiincontext.com/articles/openai-to-acquire-experiment-tracking-startup-neptune-ai-d78ffbb2</a></li>
+<li>Modal 收购 Butter：<a href="https://modal.com/blog/butter-is-joining-modal">https://modal.com/blog/butter-is-joining-modal</a></li>
+<li>Baseten 收购 Blaxel：<a href="https://www.baseten.co/blog/blaxel-is-joining-baseten-to-build-the-future-of-agentic-cloud/">https://www.baseten.co/blog/blaxel-is-joining-baseten-to-build-the-future-of-agentic-cloud/</a></li>
+<li>Supabase 收购 Turso：<a href="https://supabase.com/blog/supabase-is-acquiring-turso">https://supabase.com/blog/supabase-is-acquiring-turso</a></li>
+<li>Parallel B 轮：<a href="https://www.morningstar.com/news/pr-newswire/20260429sf46075/parallel-raises-at-2-billion-valuation-to-scale-web-infrastructure-for-agents">https://www.morningstar.com/news/pr-newswire/20260429sf46075/parallel-raises-at-2-billion-valuation-to-scale-web-infrastructure-for-agents</a></li>
+<li>Exa 融资：<a href="https://www.revenuememo.com/p/exa-funding">https://www.revenuememo.com/p/exa-funding</a></li>
+<li>沙箱融资汇总（Modal / Daytona / E2B）：<a href="https://bex.co/blog/2026/09/11/ai-sandbox-funding-modal-daytona-e2b">https://bex.co/blog/2026/09/11/ai-sandbox-funding-modal-daytona-e2b</a></li>
+<li>Browserbase B 轮：<a href="https://browserbase.com/blog/series-b-and-beyond/">https://browserbase.com/blog/series-b-and-beyond/</a></li>
+<li>Muse Wonder 付费：<a href="https://www.cnbc.com/2026/10/12/meta-muse-wonder-ai-model-agent.html">https://www.cnbc.com/2026/10/12/meta-muse-wonder-ai-model-agent.html</a></li>
+<li>Lorikeet × Instinct：<a href="https://x.com/stevehind/status/2109774195202646397">https://x.com/stevehind/status/2109774195202646397</a></li>
+<li>字节 Spell / 腾讯 LightVela：<a href="https://www.caixin.com/2026-10-10/102492147.html">https://www.caixin.com/2026-10-10/102492147.html</a></li>
+</ul></body></html>
