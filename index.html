@@ -482,74 +482,97 @@
 <li>这一层里被收购的目前只有 Stytch，买家 Twilio 也是通信老平台。</li>
 <li>真正的增量在商家侧：Lorikeet 这类客服厂商愿意为个人 agent 开门，才是准入问题的解法。</li>
 </ul>
-<h2>七、投资判断</h2>
-<p><strong>美国：什么重要</strong></p>
+<h2>七、投资判断：2026 年 10 月这一刻</h2>
+<p><strong>这一刻新在哪</strong></p>
+<ul>
+<li>agent 的用户变了：以前是开发者在自己的系统里跑 agent，现在是 Grok Bot、Muse、Instinct 这类常驻手机的个人 agent，替消费者在别人的系统里办事。</li>
+<li>瓶颈跟着挪了：模型和工具已经够用，卡点变成「让不让进」，也就是身份、授权、商家接不接、谁付钱、出事谁负责。VanEck 的 Matthew Sigel 说几乎每个购物网站都在拦 Instinct 和 Muse。</li>
+<li>风险开始落到商家那一侧：Musk 晒 Grok Bot 买乐高的截图露出订单号，别人拿去让乐高的 AI 客服改了单。</li>
+<li>商家侧的门开始出现：Lorikeet 让 Instinct 走 Personal Agent Protocol 完成银行身份认证并查余额；Blomfield 预警「客服海啸」，Sarah Guo 写《Friction》讲摩擦消失后的后果。</li>
+</ul>
+<p><strong>对照收购数据</strong></p>
 <table>
 <thead>
 <tr>
-<th>层</th>
-<th>结论</th>
+<th>收购波次</th>
+<th>买的是什么</th>
+<th>跟这一刻的关系</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>联网 / 搜索</td>
-<td>最贵的一层，Exa、Parallel 已到 $20 亿级，新进者很难再起来。</td>
+<td>2025 下半年：模型公司、安全公司</td>
+<td>团队、评测、提示注入防护</td>
+<td>解决 agent 能不能干活</td>
 </tr>
 <tr>
-<td>沙箱 / 执行云</td>
-<td>会收敛到几朵「agent 云」，独立公司要么做到 Modal、E2B 的量级，要么被推理平台买。</td>
+<td>2026 Q2：数据库、SaaS、安全巨头</td>
+<td>接入、权限、观测、网关</td>
+<td>解决企业放不放 agent 进自己系统</td>
 </tr>
 <tr>
-<td>网关 / 观测 / 连接器</td>
-<td>平台顺手就做，是被收购最多的一层，按卖给谁来投。</td>
+<td>2026 下半年：infra 互相合并</td>
+<td>沙箱、推理、数据库</td>
+<td>解决 agent 在哪跑</td>
 </tr>
 <tr>
-<td>身份 / 准入 / 支付</td>
-<td>个人 agent 起量后的真瓶颈，协议在卡组织和 Stripe 手里，空间在商家侧准入和 agent 身份。</td>
+<td>还没人买</td>
+<td>商家侧接收、agent 身份核验、授权与责任、客服侧防欺诈</td>
+<td>解决消费者的 agent 进不进得了别人家</td>
 </tr>
 </tbody>
 </table>
 <ul>
-<li>个人 agent 自带电脑、浏览器和记忆，开发者中间件会被入口方内化，独立 infra 要么卖给入口方当供应商，要么卖给老平台守门。</li>
-<li>美国退出路径很清楚：数据库、安全、SaaS 巨头都在买，种子到 A 轮就能卖 $1–4 亿。</li>
+<li>已有的收购都在「发起方」这边，帮 agent 出去办事；「接收方」这边，也就是商家怎么认 agent、怎么放行、怎么防骗，还几乎空白。</li>
+<li>这一侧唯一像样的交易是 Twilio 买 Stytch，买家是通信平台，正好是要接住「客服海啸」的那类公司。</li>
 </ul>
-<p><strong>中国：一样吗</strong></p>
+<p><strong>美国</strong></p>
 <ul>
-<li>同样的瓶颈存在，但入口在大厂手里：腾讯 LightVela 从微信接入，字节在推「Spell」，搜索、浏览器、沙箱都由大厂云自带。</li>
-<li>中国缺美国那批「老平台买家」，独立 infra 的退出主要是卖给大厂或做大厂供应商，价格和数量都更少。</li>
-<li>准入问题更难：微信、淘宝、抖音都是封闭体系，agent 能不能进门由平台说了算，不是协议说了算。</li>
-<li>真正的机会在出海：中国团队直接做全球开发者 infra，用美国的买家和退出路径。看人时优先看能直接服务海外开发者的工程团队。</li>
+<li>入口不是护城河：Muse 次日留存 73.3%，第 14 天掉到 22.5%，被 ChatGPT 反超；Meta 把 Wonder 放进 $20/$100 订阅，说明入口方自己也在找钱。</li>
+<li>大众消费会回到复购和推荐，撮合抽成最后滑回广告和流量逻辑，入口方之间会打成平台战。</li>
+<li>钱在两头：入口方要的真实供给和执行（搜索、沙箱、支付通道），以及商家侧的「门」（agent 身份、授权、客服防欺诈）。</li>
+<li>最可能的买家是 Twilio、Stripe、卡组织、Okta、电商和客服平台，它们要在「客服海啸」里守住自己的位置。</li>
 </ul>
-<p><strong>看什么样的人</strong></p>
+<p><strong>中国</strong></p>
+<ul>
+<li>门是超级 App：腾讯 LightVela 从微信接入，字节「Spell」由豆包手机助手团队做；微信、淘宝、抖音放不放 agent，是平台说了算，不是协议说了算。</li>
+<li>所以中国没有独立的「商家侧接收层」市场，接收方就是平台自己，infra 公司只能卖给大厂或做大厂的供应商。</li>
+<li>机会在出海：国内团队直接做服务海外商家和开发者的 agent 接收、身份、执行层，用美国的买家和退出路径。</li>
+</ul>
+<p><strong>这一刻该看谁</strong></p>
 <table>
 <thead>
 <tr>
 <th>类型</th>
-<th>为什么</th>
-<th>例子</th>
+<th>为什么是现在</th>
+<th>参照</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>做过上一代基础设施并卖过的人</td>
-<td>知道买家要什么，能在 A 轮前被买</td>
-<td>Pipedream 的 Sacerdoti、Natoma 的 Patnaik</td>
+<td>做过身份、风控、反欺诈的人</td>
+<td>商家要分清好 agent、坏 agent 和被冒用的 agent</td>
+<td>Stytch、Lakera、Persona</td>
+</tr>
+<tr>
+<td>做过支付、卡组织、商户收单的人</td>
+<td>agent 下单要有凭证、额度和拒付规则</td>
+<td>Stripe ACP、Visa、Mastercard</td>
+</tr>
+<tr>
+<td>做过客服平台、懂商家后台的人</td>
+<td>「客服海啸」最先砸到这里</td>
+<td>Lorikeet、Pipedream</td>
+</tr>
+<tr>
+<td>做过上一代 infra 并卖过的人</td>
+<td>知道买家要什么，A 轮前就能被买</td>
+<td>Pipedream、Natoma 的创始人</td>
 </tr>
 <tr>
 <td>开源项目先有使用量的团队</td>
 <td>买家买的是已经长在开发者那里的量</td>
 <td>Langfuse、Browser Use、E2B</td>
-</tr>
-<tr>
-<td>研究出身、啃硬底层的人</td>
-<td>数据库、沙箱这类没人能顺手做</td>
-<td>Turso、Butter</td>
-</tr>
-<tr>
-<td>懂准入和身份的人</td>
-<td>个人 agent 下一步卡在进门</td>
-<td>支付、风控、身份背景的创始人</td>
 </tr>
 </tbody>
 </table>
@@ -606,4 +629,10 @@
 <li>Turso 种子轮：<a href="https://startupintros.com/news/2022-07-01-turso-seed">https://startupintros.com/news/2022-07-01-turso-seed</a></li>
 <li>StackAI A 轮：<a href="https://www.fenomstalent.com/blog/stackai-raises-16m-series-a-to-redefine-enterprise-ai-agents/">https://www.fenomstalent.com/blog/stackai-raises-16m-series-a-to-redefine-enterprise-ai-agents/</a></li>
 <li>Pipedream 交割时客户数：<a href="https://www.linkedin.com/posts/pipedreamhq_were-thrilled-to-share-that-the-acquisition-activity-7402385063092690944-0Da0">https://www.linkedin.com/posts/pipedreamhq_were-thrilled-to-share-that-the-acquisition-activity-7402385063092690944-0Da0</a></li>
+<li>购物网站拦 Instinct / Muse：<a href="https://x.com/matthew_sigel/status/2109043587174338937">https://x.com/matthew_sigel/status/2109043587174338937</a></li>
+<li>Muse 留存曲线：<a href="https://www.allthingsmuse.com/articles/muse-retention-wins-day-one-fades-by-day-14/">https://www.allthingsmuse.com/articles/muse-retention-wins-day-one-fades-by-day-14/</a></li>
+<li>Muse Wonder 发布：<a href="https://about.fb.com/news/2026/10/introducing-muse-wonder-models/">https://about.fb.com/news/2026/10/introducing-muse-wonder-models/</a></li>
+<li>Musk 乐高截图：<a href="https://www.wired.com/story/elon-musk-bragged-about-his-grok-lego-star-wars-haul-then-x-users-punked-him/">https://www.wired.com/story/elon-musk-bragged-about-his-grok-lego-star-wars-haul-then-x-users-punked-him/</a></li>
+<li>Blomfield「客服海啸」：<a href="https://x.com/t_blom/status/2109582965567095134">https://x.com/t_blom/status/2109582965567095134</a></li>
+<li>Sarah Guo《Friction》：<a href="https://x.com/saranormous/status/2109659238809395333">https://x.com/saranormous/status/2109659238809395333</a></li>
 </ul></body></html>
